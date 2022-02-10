@@ -20,7 +20,6 @@ function App() {
       </div>
 
       <div className="container-home">
-        <h1>Accueil</h1>
         <TweetForm />
         <div className="content">
           <div className="post-container">
