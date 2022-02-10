@@ -8,4 +8,6 @@ Note.create(title: "React is a great and dynamic front end technology", content:
 Note.create(title: "Deploying today", content: "Today I am learning how to deploy an application to the web", user: u)
 Note.create(title: "Note example", content: "Eiusmod non id enim velit reprehenderit tempor consequat et minim duis eu nisi duis in. Reprehenderit veniam sit elit ea do cillum excepteur cupidatat elit minim consectetur.", user: u)
 
-Tweet.create(content: "Hey j'espère que vous allez bien ! Je sors bientôt une nouvelle vidéo ! Rendez-vous sur ma chaine Youtube !", user: u)
+Tweet.create(content: "Hey j'espère que vous allez bien ! Je sors bientôt une nouvelle vidéo ! Rendez-vous sur ma chaine Youtube !", retweet: 24, like:70, user: u)
+
+Tweet.create(content: "Je viens de voir un truc passer dans le ciel à une vitesse ! Vous l'avez remarqué aussi ?", retweet: 120, like:412, user: u)

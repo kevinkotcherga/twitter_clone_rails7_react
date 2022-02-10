@@ -2,10 +2,17 @@ import React from "react";
 
 const Like = ({ tweet }) => {
   return (
-    <div>
-      <img src="./icons/clap.png" className="clap" alt="clap" />
-      <span>{tweet.likes}</span>
-    </div>
+    <>
+      <div className="icon">
+        <img src="./icons/like.svg" alt="clap" />
+        <span>{tweet.like}</span>
+      </div>
+
+      <div className="icon">
+        <img src="./icons/retweet.svg" alt="clap" />
+        <span>{tweet.retweet}</span>
+      </div>
+    </>
   );
 };
 

@@ -1,20 +1,20 @@
-import React, {useEffect} from 'react'
+import { useSelector } from "react-redux";
 import TweetForm from "./components/TweetForm";
+import Tweet from "./components/Tweet";
+import { isEmpty } from "./components/Utils";
 
 function App() {
 
-  useEffect(() => {
-    fetch('api/tweets')
-    .then(res => res.json())
-    .then(data => console.log(data))
-  }, []);
+  const tweets = useSelector((state) => state.tweetReducer);
 
   return (
     <div>
       <h1>Accueil</h1>
       <TweetForm />
       <div className="content">
-        <div className="post-container">CONTENU</div>
+        <div className="post-container">
+          {!isEmpty(tweets) && tweets.map((tweet, index) => <Tweet tweet={tweet} key={index} />)}
+        </div>
       </div>
     </div>
   );
