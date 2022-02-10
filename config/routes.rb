@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   namespace :api do
     resources :notes, only: [:index]
+    resources :tweets, only: [:index]
 
     get "/me", to: "users#show"
     post "/signup", to: "users#create"
