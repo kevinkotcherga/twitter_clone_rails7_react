@@ -8,14 +8,33 @@ function App() {
   const tweets = useSelector((state) => state.tweetReducer);
 
   return (
-    <div>
-      <h1>Accueil</h1>
-      <TweetForm />
-      <div className="content">
-        <div className="post-container">
-          {!isEmpty(tweets) && tweets.map((tweet, index) => <Tweet tweet={tweet} key={index} />)}
+    <div className="container">
+
+      <div className="container-navbar">
+        <nav>
+          <ul>
+            <li>Accueil</li>
+            <li>Profil</li>
+          </ul>
+        </nav>
+      </div>
+
+      <div className="container-home">
+        <h1>Accueil</h1>
+        <TweetForm />
+        <div className="content">
+          <div className="post-container">
+            {!isEmpty(tweets) && tweets.map((tweet, index) => <Tweet tweet={tweet} key={index} />)}
+          </div>
         </div>
       </div>
+
+      <div className="container-search">
+        <div>
+          <h2>Recherche</h2>
+        </div>
+      </div>
+
     </div>
   );
 }
