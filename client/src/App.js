@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react'
+import TweetForm from "./components/TweetForm";
 
 function App() {
 
@@ -10,7 +11,11 @@ function App() {
 
   return (
     <div>
-      <h1>Accueil</h1>
+      <h1>Extreme</h1>
+      <TweetForm />
+      <div className="content">
+        <div className="post-container">CONTENU</div>
+      </div>
     </div>
   );
 }
