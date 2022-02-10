@@ -23,3 +23,4 @@ Things you may want to cover:
 
 * ...
 # template-react-rails-heroku
+# twitter_clone_rails7_react
