@@ -1,5 +1,6 @@
 Note.destroy_all
 Tweet.destroy_all
+User.destroy_all
 
 u = User.create(username: "elmo", password: "elmo123")
 

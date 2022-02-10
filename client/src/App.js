@@ -33,7 +33,6 @@ function App() {
           <h2>Recherche</h2>
         </div>
       </div>
-
     </div>
   );
 }

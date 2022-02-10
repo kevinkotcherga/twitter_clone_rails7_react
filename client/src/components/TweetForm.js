@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 const TweetForm = () => {
+  const [content, setContent] = useState('');
+
   return (
     <div className="form-container">
       <form>
