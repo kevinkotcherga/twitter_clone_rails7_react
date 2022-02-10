@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div>
-      <h1>Extreme</h1>
+      <h1>Accueil</h1>
       <TweetForm />
       <div className="content">
         <div className="post-container">CONTENU</div>

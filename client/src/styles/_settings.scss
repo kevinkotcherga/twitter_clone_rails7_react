@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Amiri&display=swap");
 
 $color-1: #fff;
-$color-2: #292929;
+$color-2: #000;
 $color-3: #1a8917;
 $color-4: rgb(168, 168, 168);
 
@@ -13,8 +13,8 @@ $color-4: rgb(168, 168, 168);
 }
 
 body {
-  background: $color-1;
-  color: $color-2;
+  background: $color-2;
+  color: $color-1;
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;

@@ -5,7 +5,7 @@ const TweetForm = () => {
     <div className="form-container">
       <form>
         <textarea placeholder="Quoi de neuf ?"></textarea>
-        <input type="submit" value="Tweeter" />
+        <input type="submit" value="Tweeter" className="submit" />
       </form>
     </div>
   );

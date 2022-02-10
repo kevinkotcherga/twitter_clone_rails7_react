@@ -1,5 +1,5 @@
 .form-container {
-  border: 1px solid $color-2;
+  border: 1px solid $color-1;
   margin: 20px 0 10px;
   width: 50%;
   max-width: 500px;
@@ -24,5 +24,12 @@
     textarea {
       height: 80px;
     }
+  }
+
+  .submit {
+    background-color: #1DA1F2;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
   }
 }
