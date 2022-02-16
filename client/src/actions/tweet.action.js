@@ -5,7 +5,7 @@ export const ADD_TWEET = "ADD_TWEET";
 
 export const getTweets = () => {
   return (dispatch) => {
-    return axios.get('api/tweets?_sort=id&_order=desc')
+    return axios.get('api/tweets')
     .then((res) => {
       dispatch({ type: GET_TWEETS, payload: res.data})
     })
